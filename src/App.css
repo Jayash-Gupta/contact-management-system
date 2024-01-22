@@ -3,7 +3,8 @@
 } */
 body {
   font-family: "Arial", sans-serif;
-  margin: 5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
   padding: 0;
   background-color: #f4f4f4;
 }
@@ -37,8 +38,13 @@ td {
 }
 
 th {
-  background-color: #4caf50;
+  text-align: center;
+  background-color: grey;
   color: white;
+}
+
+td {
+  text-align: center;
 }
 
 button {
@@ -53,4 +59,12 @@ button {
 
 button:hover {
   background-color: #005a70;
+}
+
+.head {
+  height: 7rem;
+  color: white;
+  background: #333;
+  text-align: center;
+  padding-top: 3rem;
 }
