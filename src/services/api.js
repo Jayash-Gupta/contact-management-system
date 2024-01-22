@@ -1,4 +1,4 @@
-const BASE_URL = 'https://server-vfu9.onrender.com/.api';  
+const BASE_URL = 'https://server-vfu9.onrender.com/api';  
 const api = {
   importContacts: async (file) => {
     try {
