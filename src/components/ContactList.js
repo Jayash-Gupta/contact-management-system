@@ -9,7 +9,6 @@ const ContactList = () => {
   const [totalC, setTotalC] = useState(10);
   const [error, setError] = useState("");
   const contactsPerPage = totalC;
-
   useEffect(() => {
     const fetchContacts = async () => {
       try {
