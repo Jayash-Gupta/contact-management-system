@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import api from "../services/api";
 import "./contactlist.css";
-
 const ContactImport = () => {
   const [file, setFile] = useState(null);
   const [error, setError] = useState("");
@@ -28,8 +27,13 @@ const ContactImport = () => {
   };
 
   return (
-    <div>
-      <input type="file" onChange={handleFileChange} />
+    <div className="CI">
+      <input
+        type="file"
+        onChange={handleFileChange}
+        placeholder="Select File"
+        className="file"
+      />
       <button onClick={handleImport}>Import Contacts</button>
       {error && <div style={{ color: "red" }}>{error}</div>}
       {successMessage && <div style={{ color: "green" }}>{successMessage}</div>}
